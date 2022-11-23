@@ -23,8 +23,8 @@ public class MainMenu extends ScreenAbstract {
         LoadGameButton = new Texture("LoadGamebutton.png");
         ExitButton = new Texture("Exitbutton.png");
         constraintNGBtn = new Rectangle(490,436,300,67);
-        constraintLGBtn = new Rectangle(465, 302, 300, 67);
-        constraintExitBtn = new Rectangle(465, 193, 300, 67);
+        constraintLGBtn = new Rectangle(490, 327, 300, 67);
+        constraintExitBtn = new Rectangle(490, 218, 300, 67);
 
 
     }
@@ -35,6 +35,17 @@ public class MainMenu extends ScreenAbstract {
             if (constraintNGBtn.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
                 sl.set(new ChooseATank(sl));
                 dispose();
+            }
+        }
+        if (Gdx.input.justTouched()) {
+            if (constraintLGBtn.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
+                sl.set(new InGame(sl));
+                dispose();
+            }
+        }
+        if (Gdx.input.justTouched()) {
+            if (constraintExitBtn.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
+                Gdx.app.exit();
             }
         }
 
