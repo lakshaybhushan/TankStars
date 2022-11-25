@@ -25,8 +25,6 @@ public class MainMenu extends ScreenAbstract {
         constraintNGBtn = new Rectangle(490,436,300,67);
         constraintLGBtn = new Rectangle(490, 327, 300, 67);
         constraintExitBtn = new Rectangle(490, 218, 300, 67);
-
-
     }
 
     @Override
@@ -39,7 +37,7 @@ public class MainMenu extends ScreenAbstract {
         }
         if (Gdx.input.justTouched()) {
             if (constraintLGBtn.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
-                sl.set(new InGame(sl));
+                sl.set(new LoadGame(sl));
                 dispose();
             }
         }
@@ -55,7 +53,6 @@ public class MainMenu extends ScreenAbstract {
     public void update(float dt) {
         handleInput();
     }
-
     @Override
     public void render(SpriteBatch sb) {
         sb.begin();
