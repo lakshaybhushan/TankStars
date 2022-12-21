@@ -14,7 +14,6 @@ public class StartPage extends ScreenAbstract {
         super(sl);
         background = new Texture("PlayScreen.png");
         playButton = new Texture("Playbutton.png");
-        pressedPlayButton = new Texture("pressedPlayButton.png");
         constraint = new Rectangle(490,182,300,67);
     }
 

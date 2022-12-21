@@ -11,4 +11,5 @@ public abstract class ScreenAbstract {
     public abstract void update(float dt);
     public abstract void render(SpriteBatch sb);
     public abstract void dispose();
+
 }

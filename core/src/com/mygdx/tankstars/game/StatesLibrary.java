@@ -18,18 +18,17 @@ public class StatesLibrary {
 
         screens.pop();
     }
-    public void set(ScreenAbstract state) {
+    public boolean set(ScreenAbstract state) {
 
         screens.pop();
 
         screens.push(state);
+        return false;
     }
     public void update(float dt) {
-
         screens.peek().update(dt);
     }
     public void render(SpriteBatch sb) {
-
         screens.peek().render(sb);
     }
 

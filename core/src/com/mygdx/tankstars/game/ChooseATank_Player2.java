@@ -6,9 +6,10 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import java.awt.*;
 
-public class ChooseATank extends ScreenAbstract{
 
-    private Texture ChooseATankbg;
+public class ChooseATank_Player2 extends ScreenAbstract{
+
+    private Texture ChooseATank2bg;
     private Texture RedTank;
     private Texture GreenTank;
     private Texture BrownTank;
@@ -17,9 +18,13 @@ public class ChooseATank extends ScreenAbstract{
     private Rectangle contraintGreenTank;
     private Rectangle contraintBrownTank;
 
-    protected ChooseATank(StatesLibrary sl) {
+    public static int whichTankP2;
+
+
+
+    protected ChooseATank_Player2(StatesLibrary sl) {
         super(sl);
-        ChooseATankbg = new Texture("ChooseATank.png");
+        ChooseATank2bg = new Texture("ChooseATank2.png");
         RedTank = new Texture("RedFrmTank.png");
         GreenTank = new Texture("GreenFrmTank.png");
         BrownTank = new Texture("BrownFrmTank.png");
@@ -34,18 +39,21 @@ public class ChooseATank extends ScreenAbstract{
         if (Gdx.input.justTouched()) {
             if (contraintRedTank.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
                 sl.set(new NewGame(sl));
+                whichTankP2 = 0;
                 dispose();
             }
         }
         if (Gdx.input.justTouched()) {
             if (contraintGreenTank.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
                 sl.set(new NewGame(sl));
+                whichTankP2 = 1;
                 dispose();
             }
         }
         if (Gdx.input.justTouched()) {
             if (contraintBrownTank.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
                 sl.set(new NewGame(sl));
+                whichTankP2 = 2;
                 dispose();
             }
         }
@@ -60,7 +68,7 @@ public class ChooseATank extends ScreenAbstract{
     @Override
     public void render(SpriteBatch sb) {
         sb.begin();
-        sb.draw(ChooseATankbg, 0, 0, 1280, 720);
+        sb.draw(ChooseATank2bg, 0, 0, 1280, 720);
         sb.draw(RedTank, 76, 173, RedTank.getWidth(), RedTank.getHeight());
         sb.draw(GreenTank, 463, 173, GreenTank.getWidth(), GreenTank.getHeight());
         sb.draw(BrownTank, 850, 173, BrownTank.getWidth(), BrownTank.getHeight());
@@ -72,4 +80,6 @@ public class ChooseATank extends ScreenAbstract{
     public void dispose() {
 
     }
+
+
 }

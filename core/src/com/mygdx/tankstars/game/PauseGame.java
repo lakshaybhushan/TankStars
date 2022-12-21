@@ -32,7 +32,7 @@ public class PauseGame extends ScreenAbstract{
     protected void handleInput() {
         if (Gdx.input.justTouched()) {
             if (constraintResumeBtn.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
-                sl.set(new LoadGame(sl));
+                sl.set(new NewGame(sl));
                 dispose();
             }
         }

@@ -31,13 +31,13 @@ public class MainMenu extends ScreenAbstract {
     protected void handleInput() {
         if (Gdx.input.justTouched()) {
             if (constraintNGBtn.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
-                sl.set(new ChooseATank(sl));
+                sl.set(new ChooseATank_Player1(sl));
                 dispose();
             }
         }
         if (Gdx.input.justTouched()) {
             if (constraintLGBtn.contains(Gdx.input.getX(),720-Gdx.input.getY())) { //Height of window = 720p
-                sl.set(new LoadGame(sl));
+                sl.set(new NewGame(sl));
                 dispose();
             }
         }
@@ -69,4 +69,6 @@ public class MainMenu extends ScreenAbstract {
     public void dispose() {
 
     }
+
+
 }
