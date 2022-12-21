@@ -3,22 +3,24 @@ package com.mygdx.tankstars.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-
 import java.awt.*;
 
 public class StartPage extends ScreenAbstract {
     private Texture background;
     private Texture playButton;
+    private Texture pressedPlayButton;
     private Rectangle constraint;
     public StartPage(StatesLibrary sl) {
         super(sl);
         background = new Texture("PlayScreen.png");
         playButton = new Texture("Playbutton.png");
+        pressedPlayButton = new Texture("pressedPlayButton.png");
         constraint = new Rectangle(490,182,300,67);
     }
 
     @Override
     protected void handleInput() {
+//        if (Gdx.input.)
         if(Gdx.input.justTouched()){
             if(constraint.contains(Gdx.input.getX(),720-Gdx.input.getY())){ //Height of window = 720p
                 sl.set(new MainMenu(sl));
