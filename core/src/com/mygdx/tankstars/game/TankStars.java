@@ -1,10 +1,8 @@
-package com.mygdx.tankstars;
+package com.mygdx.tankstars.game;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.tankstars.screens.StatesLibrary;
-import com.mygdx.tankstars.screens.StartPage;
 
 public class TankStars extends ApplicationAdapter {
 	private SpriteBatch batch;

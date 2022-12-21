@@ -1,4 +1,4 @@
-package com.mygdx.tankstars.screens;
+package com.mygdx.tankstars.game;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 

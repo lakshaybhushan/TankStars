@@ -1,4 +1,4 @@
-package com.mygdx.tankstars.screens;
+package com.mygdx.tankstars.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -53,6 +53,7 @@ public class MainMenu extends ScreenAbstract {
     public void update(float dt) {
         handleInput();
     }
+
     @Override
     public void render(SpriteBatch sb) {
         sb.begin();

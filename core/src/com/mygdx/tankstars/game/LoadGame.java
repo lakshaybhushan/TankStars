@@ -1,11 +1,9 @@
-package com.mygdx.tankstars.screens;
+package com.mygdx.tankstars.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-
-import java.awt.*;
 
 public class LoadGame extends ScreenAbstract{
     private Texture GameBg;
