@@ -1,9 +1,8 @@
 # TankStars
 
-Made a very simple yet beautiful looking game using Java's game development engine - LibGDX
+Made a very simple yet beautiful looking game using Java's game development engine - LibGDX :)
 
 ![TankStars](TankStars.png)
-
 
 ## Features:
 
@@ -26,7 +25,7 @@ User can launch the game by executing the ```run``` which can be found in gradle
 
 ### Player 2
 
-- Press ```LEFT``` or ```RIGHT``` arrow keys to move tank **Left** or **Right** side respectively
+- Press ```LEFT``` or ```RIGHT``` arrow keys to move tank **Left** or **Right** side respectively.
 - Press ```RIGHT SHIFT``` to shoot bullets at an angle of 45 degrees.
 - Hold ```UP``` arrow key while shooting bullets to decrease the angle.
 
