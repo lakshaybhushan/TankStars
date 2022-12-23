@@ -29,7 +29,10 @@ User can launch the game by executing the ```run``` which can be found in gradle
 
 ---
 
-# Collaborators
+# Contributors :
+
+@lakshaybhushan
+@Twisha-21432
 
 
 
