@@ -30,9 +30,9 @@ User can launch the game by executing the ```run``` which can be found in gradle
 ---
 
 # Contributors :
+[Lakshay Bhushan] (https://github.com/lakshaybhushan)
+[Twisha Kacker](https://github.com/Twisha-21432)
 
-@lakshaybhushan
-@Twisha-21432
 
 
 
