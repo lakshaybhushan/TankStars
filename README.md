@@ -2,6 +2,9 @@
 
 Made a very simple yet beautiful looking game using Java's game development engine - LibGDX
 
+![TankStars](TankStars.png)
+
+
 ### Features:
 
 - Player can choose between three tanks !!
